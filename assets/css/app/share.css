@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+.twitter_feed {
+    padding-bottom:20px;
+    border-bottom:1px solid #e4e6e8;
+    margin-bottom:10px;
+}
+
+.twitter_wrapper {
+    float:left; 
+    margin-top:6px !important;
+}
+
+
+/* RESPONSIVE ADJUSTMENTS */
+
+@media only screen
+and (max-width : 883px) {
+    .col_social {padding-bottom:20px;border-bottom:1px solid #e4e6e8;}
+    .twitter_feed {
+        float:left;
+        width:400px;
+        padding:0;
+        border:none;
+        margin:0;
+    }
+    .share_btns {
+        float:right;
+        min-width:210px;
+    }
+}

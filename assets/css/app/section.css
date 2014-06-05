@@ -1,0 +1,34 @@
+@charset "UTF-8";
+
+.section {width:100%;}
+
+.padding_top {padding-top:80px;}
+
+.padding_bottom {padding-bottom:220px;}
+
+.section .wrapper {
+    width:100%;
+    max-width:1200px;
+    height:100%;
+    margin:0 auto;
+    padding:0 40px;   
+}
+
+#header  {padding-top:20px;}
+#hero    {padding-top:40px;}
+#content {padding-top:70px;}
+
+
+/* RESPONSIVE ADJUSTMENTS */
+
+@media only screen 
+and (max-width : 1023px) {.section .wrapper {padding-left:0; padding-right:0;}}
+
+@media only screen
+and (max-width : 883px) {#content {padding-top:40px;}}
+
+@media only screen 
+and (max-width : 747px) {
+    .padding_bottom {padding-bottom:80px;}
+    .content {padding-top:30px;}
+}

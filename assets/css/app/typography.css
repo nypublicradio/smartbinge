@@ -1,0 +1,177 @@
+@charset "UTF-8";
+
+/* See http://bit.ly/1eMgki5 for advice regarding REM units */
+
+html {font-size:62.5% !important;}
+
+body {
+    font-family:'Lato', sans-serif;
+    font-style:normal;
+    font-weight:400;
+    font-size:2.4rem;
+    line-height:3.2rem;
+    color:#e11837;
+    -webkit-font-smoothing:antialiased;
+}
+
+/* Headers */
+
+h1,h2,h3,h4 {
+    font-weight:700;
+    margin:0;
+}
+
+h1 {
+    font-size:12.6rem;
+    line-height:12.6rem;
+    margin-bottom:30px;
+}
+
+h2 {
+    font-size:8.0rem;
+    line-height:8.0rem;
+    margin-bottom:10px;
+}
+
+h3 {
+    position:relative;
+    min-height:72px;
+    padding:8px 42px 8px 14px;
+    /* Text */
+    font-size:0.85em;
+    line-height:1.4em;
+    color:#fff;
+}
+
+h3::after {
+    position:absolute;
+    top:15px; right:14px;
+    width:0;
+    height:0;
+    border-top:   8px solid transparent;
+	border-bottom:8px solid transparent;
+	border-left:  14px solid #fff;
+    content:'';
+    opacity:0;
+    -webkit-transition:opacity 0.2s ease-in-out;
+    	    transition:opacity 0.2s ease-in-out;
+}
+.no-touch .grid_wrapper:hover h3::after {opacity:1;}
+
+h4 {
+    display:table-cell;
+    vertical-align:middle;
+    /* Text */
+    font-size:2.5rem;
+    line-height:normal;
+    color:#fff;
+    text-align:center;
+}
+
+/* Body */
+
+p {margin-bottom:20px;}
+
+.grid_text {
+    padding:0 14px 10px;
+    margin-bottom:0;
+    /* Text */
+    color:#fff;
+    font-size:1.4rem;
+    line-height:2.1rem;
+    
+}
+
+.list_link {
+    display:table-cell;
+    vertical-align:middle;
+    /* Text */
+    color:#fff;
+    font-size:2.2rem;
+    line-height:2.2rem;
+    text-decoration:none;
+}
+
+strong,b {font-weight:700;}
+
+
+/* RESPONSIVE ADJUSTMENTS */
+
+@media only screen 
+and (max-width : 959px) {
+
+    h3 {padding-right:14px;}
+    h3::after {display:none;}
+
+}
+
+@media only screen 
+and (max-width : 816px) {
+    
+    body {
+        font-size:2.0rem;
+        line-height:2.8rem;
+    }
+
+    
+    h1 {
+        font-size:8.6rem;
+        line-height:8.6rem;
+    }
+    
+    h2 {
+        font-size:6.6rem;
+        line-height:6.6rem;
+    } 
+    
+    
+}
+
+@media only screen 
+and (max-width : 747px) {
+
+    h3 {
+        min-height:0;
+        font-size:1.1em;
+        line-height:1.4em;
+        padding:20px;
+    }
+    
+    h4 { 
+        vertical-align:bottom;
+        padding-bottom:5px;
+        /* Text */
+        font-size:2.0rem;
+    }
+    
+    .grid_text {padding:0 20px 20px;}
+    
+    .list_link {
+        vertical-align:top;
+        text-align:center; 
+        line-height:normal;
+        padding-top:5px;
+    }
+
+}
+
+@media only screen 
+and (max-width : 592px) {
+
+    body {
+        font-size:1.6rem;
+        line-height:2.4rem;
+    }
+
+    h1 {
+        font-size:4.8rem;
+        line-height:4.8rem;
+        margin-bottom:20px;
+    }   
+    
+    h2 {
+        font-size:4.8rem;
+        line-height:4.8rem;
+    } 
+    
+}

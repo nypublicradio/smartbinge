@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+#hero h1,
+#hero p {text-align:center;}
+
+#hero p {
+    max-width:620px;
+    padding-bottom:10px;
+    margin:0 auto;
+}
+
+
+/* RESPONSIVE ADJUSTMENTS */
+
+@media only screen 
+and (max-width : 592px) {
+    #hero h1,
+    #hero p {text-align:left;}
+}
