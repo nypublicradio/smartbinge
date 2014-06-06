@@ -68,11 +68,18 @@
     -webkit-transition:-webkit-transform 0.3s ease-in-out;
     	    transition:transform         0.3s ease-in-out;
 }
+.no-csstransforms3d .grid_info {
+    -ms-transform:translate(0,-72px);
+        transform:translate(0,-72px);
+}
 .no-touch .grid_wrapper:hover .grid_info {
     -webkit-transform:translate3d(0,-100%,0);
     	    transform:translate3d(0,-100%,0);
 }
-
+.no-csstransforms3d .grid_wrapper:hover .grid_info {
+    -ms-transform:translate(0,-100%);
+        transform:translate(0,-100%);
+}
 
 /* RESPONSIVE ADJUSTMENTS */
 
@@ -126,6 +133,10 @@ and (max-width : 747px) {
         height:100%;
         -webkit-transform:translate3d(0,0,0) !important;
     	        transform:translate3d(0,0,0) !important;
+    }
+    .no-csstransforms3d .grid_info {   
+            -ms-transform:translate(0,0) !important;
+        	    transform:translate(0,0) !important;
     }
     
 }
