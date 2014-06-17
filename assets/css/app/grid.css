@@ -82,8 +82,8 @@
                        height            0s        ease-in-out;
     	    transition:transform         0s   0.1s ease-in-out, 
     	               height            0.3s      ease-in-out;
-    -webkit-transform:translate3d(0,-90%,0);
-    	    transform:translate3d(0,-90%,0);
+    -webkit-transform:translate3d(0,-80%,0);
+    	    transform:translate3d(0,-80%,0);
 }
 .no-csstransforms3d .grid_wrapper:hover .grid_info {
     -ms-transform:translate(0,-100%);
