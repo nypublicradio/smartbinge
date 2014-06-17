@@ -98,15 +98,31 @@ strong,b {font-weight:700;}
 /* RESPONSIVE ADJUSTMENTS */
 
 @media only screen 
+and (max-width : 1199px) {
+    
+    h3 {
+        font-size:0.75em;
+        line-height:1.6em;
+    }
+
+}
+
+
+@media only screen 
 and (max-width : 959px) {
 
     h3 {padding-right:14px;}
     h3::after {display:none;}
+    
+    h3 {
+        font-size:0.6em;
+        line-height:1.8em;
+    }
 
 }
 
 @media only screen 
-and (max-width : 816px) {
+and (max-width : 883px) {
     
     body {
         font-size:2.0rem;
@@ -123,6 +139,11 @@ and (max-width : 816px) {
         font-size:6.6rem;
         line-height:6.6rem;
     } 
+    
+    h3 {
+        font-size:0.85em;
+        line-height:1.6em;
+    }
     
     
 }
